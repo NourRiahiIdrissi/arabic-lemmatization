@@ -1,0 +1,538 @@
+{
+  "comparison": {
+    "Baseline": {
+      "token_accuracy": 0.8941015089163238,
+      "exact_match": 0.39228295819935693,
+      "f1": 0.8929744844459979,
+      "precision": 0.9053153791637136,
+      "recall": 0.8809655172413793
+    },
+    "aubmindlab/bert-base-arabertv02": {
+      "loss": 0.8167427778244019,
+      "token_accuracy": 0.9053341148886284,
+      "exact_match": 0.4405144694533762,
+      "f1": 0.9051234795429414,
+      "precision": 0.9054572271386431,
+      "recall": 0.9047899778924098,
+      "runtime": 8.4773,
+      "samples_per_second": 73.372,
+      "steps_per_second": 4.601,
+      "epoch": 10.0
+    },
+    "CAMeL-Lab/bert-base-arabic-camelbert-msa": {
+      "loss": 0.8760676383972168,
+      "token_accuracy": 0.8961700888306393,
+      "exact_match": 0.3971061093247588,
+      "f1": 0.8960515713134568,
+      "precision": 0.8963798915433094,
+      "recall": 0.8957234915055653,
+      "runtime": 8.1841,
+      "samples_per_second": 76.001,
+      "steps_per_second": 4.765,
+      "epoch": 10.0
+    }
+  },
+  "best_model": "aubmindlab/bert-base-arabertv02",
+  "errors": [
+    {
+      "token": "m~ina",
+      "pred": "saA^'a",
+      "true": "min"
+    },
+    {
+      "token": "s~ijoni",
+      "pred": "SaAHib",
+      "true": "s~ijon"
+    },
+    {
+      "token": "qah~aAru",
+      "pred": "s~abot",
+      "true": "qah~aAr"
+    },
+    {
+      "token": "Ealimo",
+      "pred": "kataba",
+      "true": "Ealima"
+    },
+    {
+      "token": "qaroDFA",
+      "pred": "muSad~iq",
+      "true": "qaroD"
+    },
+    {
+      "token": "taqotula",
+      "pred": "baATin",
+      "true": "qatala"
+    },
+    {
+      "token": "yawomi",
+      "pred": "ma>owaY`",
+      "true": "yawom"
+    },
+    {
+      "token": "m~an~a",
+      "pred": "yataman~a",
+      "true": "man~a"
+    },
+    {
+      "token": "<in~a",
+      "pred": ">axa*a",
+      "true": "<in~"
+    },
+    {
+      "token": "man",
+      "pred": "rajaEa",
+      "true": "man"
+    },
+    {
+      "token": ">aEoyunu",
+      "pred": "ta>owiyl",
+      "true": "Eayon"
+    },
+    {
+      "token": ">ay~aAmi",
+      "pred": "{ntaSara",
+      "true": "yawom"
+    },
+    {
+      "token": "fiy",
+      "pred": "ma>owaY`",
+      "true": "fiY"
+    },
+    {
+      "token": "m~in",
+      "pred": "mu$orik",
+      "true": "min"
+    },
+    {
+      "token": "<ilaY",
+      "pred": ">amor",
+      "true": "<ilaY`"
+    },
+    {
+      "token": "'aAya`ti",
+      "pred": "mu&omin",
+      "true": "'aAyap"
+    },
+    {
+      "token": "layota",
+      "pred": "taEa`laY`",
+      "true": "layot"
+    },
+    {
+      "token": "{l~a*iyna",
+      "pred": "taraka",
+      "true": "{l~a*iY"
+    },
+    {
+      "token": "<ino",
+      "pred": ">aHosan",
+      "true": "<in"
+    },
+    {
+      "token": "'aAxirapi",
+      "pred": ">aHosan",
+      "true": "A^xir"
+    },
+    {
+      "token": "baniY^",
+      "pred": "ja`hada",
+      "true": "bunaY~"
+    },
+    {
+      "token": "tukowaY`",
+      "pred": "yawom",
+      "true": "tukowaY`"
+    },
+    {
+      "token": "fiy",
+      "pred": "saqaY`",
+      "true": "fiY"
+    },
+    {
+      "token": "yaDoribu",
+      "pred": "sa>ala",
+      "true": "Daraba"
+    },
+    {
+      "token": "ya*ohabu",
+      "pred": ">awoHaY`^",
+      "true": "*ahaba"
+    },
+    {
+      "token": ">anSaAri",
+      "pred": ">um~ap",
+      "true": "naSiyr"
+    },
+    {
+      "token": "yagolibu",
+      "pred": "Har~ama",
+      "true": "galabu"
+    },
+    {
+      "token": "*a`lika",
+      "pred": "qara>a",
+      "true": "*a`lik"
+    },
+    {
+      "token": ">ajorN",
+      "pred": "ga$iya",
+      "true": ">ajor"
+    },
+    {
+      "token": "qaroDFA",
+      "pred": "EaraDa",
+      "true": "qaroD"
+    },
+    {
+      "token": "laA",
+      "pred": "yaTomaEu",
+      "true": "laA"
+    },
+    {
+      "token": "riHolapa",
+      "pred": "<i*aA",
+      "true": "riHolap"
+    },
+    {
+      "token": "{ll~ahi",
+      "pred": "far~aT",
+      "true": "{ll~ah"
+    },
+    {
+      "token": "yaqotulu",
+      "pred": "gaDab",
+      "true": "qatala"
+    },
+    {
+      "token": "Z~a`limiyna",
+      "pred": "yaSifu",
+      "true": "ZaAlim"
+    },
+    {
+      "token": "HarasFA",
+      "pred": "mas~a",
+      "true": "Haras"
+    },
+    {
+      "token": "bay~ina`tK",
+      "pred": "HaA^j~a",
+      "true": "bay~inap"
+    },
+    {
+      "token": "TaEaAmi",
+      "pred": "HaA^j~a",
+      "true": "TaEaAm"
+    },
+    {
+      "token": "kul~u",
+      "pred": "ta*ak~ara",
+      "true": "kul~"
+    },
+    {
+      "token": "{ll~ahi",
+      "pred": "m~ariyD",
+      "true": "{ll~ah"
+    },
+    {
+      "token": "EibaAdi",
+      "pred": "bayot",
+      "true": "Eabod"
+    },
+    {
+      "token": "jamoEu",
+      "pred": "yaHozun",
+      "true": "jamoE"
+    },
+    {
+      "token": "maA",
+      "pred": "Haq~",
+      "true": "maA"
+    },
+    {
+      "token": "mino",
+      "pred": "{ntahaY`",
+      "true": "min"
+    },
+    {
+      "token": "{l~a*iY^",
+      "pred": ">amosaka",
+      "true": "{l~a*iY"
+    },
+    {
+      "token": "kayodu",
+      "pred": "sa>ala",
+      "true": "kayod"
+    },
+    {
+      "token": "Hamiymi",
+      "pred": "galiyZ",
+      "true": "Hamiym"
+    },
+    {
+      "token": "muHar~ami",
+      "pred": ">asar~a",
+      "true": "muHar~am"
+    },
+    {
+      "token": "kafaru",
+      "pred": "nasiYa",
+      "true": "kafara"
+    },
+    {
+      "token": "{ll~ahu",
+      "pred": "ziynap",
+      "true": "{ll~ah"
+    },
+    {
+      "token": "{l~a*iyna",
+      "pred": "Eajibu",
+      "true": "{l~a*iY"
+    },
+    {
+      "token": "fiY",
+      "pred": "{sotuhozi}a",
+      "true": "fiY"
+    },
+    {
+      "token": "qisoTi",
+      "pred": "fatanu",
+      "true": "qisoT"
+    },
+    {
+      "token": "maSofuwfapN",
+      "pred": "mubaArak",
+      "true": "maSofuwfap"
+    },
+    {
+      "token": "{ll~ahu",
+      "pred": ">aSoHa`b",
+      "true": "{ll~ah"
+    },
+    {
+      "token": "m~asadK]",
+      "pred": "jund",
+      "true": "m~asad"
+    },
+    {
+      "token": ">aSaAba",
+      "pred": ">ajoramu",
+      "true": ">aSaAba"
+    },
+    {
+      "token": "<ilayo",
+      "pred": "naAdaY`",
+      "true": "<ilaY`"
+    },
+    {
+      "token": ">aHadK",
+      "pred": "waEada",
+      "true": ">aHad"
+    },
+    {
+      "token": "taHozanu",
+      "pred": "hal",
+      "true": "yaHozun"
+    },
+    {
+      "token": ">ujaAjN",
+      "pred": "marojiE",
+      "true": ">ujaAj"
+    },
+    {
+      "token": "kaAnu",
+      "pred": "Tuwr",
+      "true": "kaAna"
+    },
+    {
+      "token": "'aAzifapu",
+      "pred": "Hizob",
+      "true": "'aAzifap"
+    },
+    {
+      "token": "baEoDK",
+      "pred": "quw~ap",
+      "true": "baEoD"
+    },
+    {
+      "token": "<in~a",
+      "pred": "nazala",
+      "true": "<in~"
+    },
+    {
+      "token": "ta*aru",
+      "pred": ">aloqaY`^",
+      "true": "ya*ara"
+    },
+    {
+      "token": "vum~a",
+      "pred": "siyqa",
+      "true": "vum~"
+    },
+    {
+      "token": "*aAti",
+      "pred": "<ilaY`",
+      "true": "*uw"
+    },
+    {
+      "token": "waAdiyFA",
+      "pred": "nafoE",
+      "true": "waAdiy"
+    },
+    {
+      "token": "kaAnu",
+      "pred": "Sagiyr",
+      "true": "kaAna"
+    },
+    {
+      "token": "baEoDu",
+      "pred": "sa>ala",
+      "true": "baEoD"
+    },
+    {
+      "token": "S~a`liHa`ti",
+      "pred": "jazaY`",
+      "true": "S~a`liHa`t"
+    },
+    {
+      "token": ">anaAba",
+      "pred": "naEiym",
+      "true": ">anaAba"
+    },
+    {
+      "token": "r~aHoma`ni",
+      "pred": "layol",
+      "true": "r~aHoma`n"
+    },
+    {
+      "token": "jin~i",
+      "pred": "maE",
+      "true": "jin~"
+    },
+    {
+      "token": "Haq~N",
+      "pred": ">akovar",
+      "true": "Haq~"
+    },
+    {
+      "token": "xaAtama",
+      "pred": "muSad~iq",
+      "true": "xaAtam"
+    },
+    {
+      "token": "Ealayo",
+      "pred": "diyn",
+      "true": "EalaY`"
+    },
+    {
+      "token": "maA",
+      "pred": "faD~ala",
+      "true": "maA"
+    },
+    {
+      "token": "yaEolamu",
+      "pred": "TagaY`",
+      "true": "Ealima"
+    },
+    {
+      "token": "<il~aA",
+      "pred": "labaso",
+      "true": "<il~aA"
+    },
+    {
+      "token": "{ll~ahu",
+      "pred": "muSad~iq",
+      "true": "{ll~ah"
+    },
+    {
+      "token": "m~ino",
+      "pred": "faHo$aA^'",
+      "true": "min"
+    },
+    {
+      "token": "m~in",
+      "pred": "sariyE",
+      "true": "min"
+    },
+    {
+      "token": "maA^",
+      "pred": "kaAna",
+      "true": "maA"
+    },
+    {
+      "token": "TagaY`",
+      "pred": "zaAda",
+      "true": "TagaY`"
+    },
+    {
+      "token": "{ll~aha",
+      "pred": "{EotadaY`",
+      "true": "{ll~ah"
+    },
+    {
+      "token": "tarojumu",
+      "pred": "Ea*~aba",
+      "true": "rajamo"
+    },
+    {
+      "token": "jan~atayoni",
+      "pred": "kataba",
+      "true": "jan~ap"
+    },
+    {
+      "token": "EalaY",
+      "pred": "nasiYa",
+      "true": "EalaY`"
+    },
+    {
+      "token": "yasomaEu",
+      "pred": "zaAda",
+      "true": "samiEa"
+    },
+    {
+      "token": "sawiy~FA",
+      "pred": "muqar~abuwn",
+      "true": "sawiy~"
+    },
+    {
+      "token": ">a$ad~u",
+      "pred": "{sotajaAba",
+      "true": ">a$ad~"
+    },
+    {
+      "token": "xaloqa",
+      "pred": "$ahida",
+      "true": "xaloq"
+    },
+    {
+      "token": "yuSiybu",
+      "pred": "rasuwl",
+      "true": ">aSaAba"
+    },
+    {
+      "token": "_#aAya`ti",
+      "pred": "qaDaY`^",
+      "true": "'aAyap"
+    },
+    {
+      "token": ">aya`maY`",
+      "pred": ">anjaY`",
+      "true": ">aya`maY`"
+    },
+    {
+      "token": "<in",
+      "pred": "yawom",
+      "true": "<in"
+    },
+    {
+      "token": "'aAxariyna",
+      "pred": "m~ud~akir",
+      "true": "A^xar"
+    },
+    {
+      "token": "Ealayo",
+      "pred": ">asoqayo",
+      "true": "EalaY`"
+    }
+  ]
+}

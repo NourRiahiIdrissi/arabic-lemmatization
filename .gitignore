@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Large model files - too big for GitHub
+final_bert-base-arabertv02/
+final_bert-base-arabic-camelbert-msa/
+out_bert-base-arabertv02/
+out_bert-base-arabic-camelbert-msa/
