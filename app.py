@@ -224,9 +224,9 @@ def main():
     #if Path("final_bert-base-arabic-camelbert-msa").exists():
      #   available_models.append("CAMeL-BERT MSA")
     
-    if not available_models:
-        st.error("No trained models found. Please ensure model directories exist.")
-        st.stop()
+    #if not available_models:
+    #    st.error("No trained models found. Please ensure model directories exist.")
+    #   st.stop()
     # Model selection
     available_models = ["AraBERT v02", "CAMeL-BERT MSA"]
     
