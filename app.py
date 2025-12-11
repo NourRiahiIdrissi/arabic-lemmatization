@@ -126,11 +126,18 @@ st.markdown("""
 
 # Load model and tokenizer
 @st.cache_resource
-def load_model_and_tokenizer(model_path):
-    """Load the trained model and tokenizer"""
+def load_model_and_tokenizer(model_choice, hf_username):
+    """Load the trained model and tokenizer from Hugging Face"""
     try:
-        tokenizer = AutoTokenizer.from_pretrained(model_path)
-        model = AutoModelForTokenClassification.from_pretrained(model_path)
+        # Map model choice to Hugging Face repo
+        if model_choice == "AraBERT v02":
+            repo_id = f"{hf_username}/arabertv02-lemmatization"
+        else:
+            repo_id = f"{hf_username}/camelbert-lemmatization"
+        
+        st.info(f"Loading model from Hugging Face: {repo_id}")
+        tokenizer = AutoTokenizer.from_pretrained(repo_id)
+        model = AutoModelForTokenClassification.from_pretrained(repo_id)
         model.eval()
         return tokenizer, model
     except Exception as e:
@@ -211,15 +218,17 @@ def main():
     st.sidebar.header("Model Configuration")
     
     # Model selection
-    available_models = []
-    if Path("final_bert-base-arabertv02").exists():
-        available_models.append("AraBERT v02")
-    if Path("final_bert-base-arabic-camelbert-msa").exists():
-        available_models.append("CAMeL-BERT MSA")
+    #available_models = []
+    #if Path("final_bert-base-arabertv02").exists():
+     #   available_models.append("AraBERT v02")
+    #if Path("final_bert-base-arabic-camelbert-msa").exists():
+     #   available_models.append("CAMeL-BERT MSA")
     
     if not available_models:
         st.error("No trained models found. Please ensure model directories exist.")
         st.stop()
+    # Model selection
+    available_models = ["AraBERT v02", "CAMeL-BERT MSA"]
     
     model_choice = st.sidebar.selectbox(
         "Select Model",
@@ -236,7 +245,9 @@ def main():
     
     # Load resources
     with st.spinner("Loading model and resources..."):
-        tokenizer, model = load_model_and_tokenizer(model_path)
+        # Add your Hugging Face username here
+        HF_USERNAME = "nourriahiidrissi"  # Replace with your actual username
+        tokenizer, model = load_model_and_tokenizer(model_choice, HF_USERNAME)
         label2id, id2label = load_label_map("merged_label2id.json")
         results = load_results("results.json")
     
